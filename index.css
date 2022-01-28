@@ -1,6 +1,6 @@
-  body {
+   body {
     font-family: Verdana, sans-serif;
-  }
+   }
 
   .formHeading {
       background-color: #637a91;
@@ -62,4 +62,30 @@
       border: solid black 1px;	
       border-radius: 5px;  
       box-shadow: 5px 5px 2px #888;
+  }
+
+  .textBox {
+      margin: 4%;
+      margin-left: 25%;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    form{
+        width: 450px;
+    }
+
+    input{
+        width: 95%;
+    }
+    
+    .inputHeading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textBox {
+        margin: 4%;
+        margin-left: 4%;
+    }
   }
