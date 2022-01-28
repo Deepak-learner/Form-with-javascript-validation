@@ -39,7 +39,7 @@ function validateFirstName() {
 
 function validateLastName() {
 	var lastname = valueOf("lname");  // store the last name.
-    var reg = /^[A-Za-z]+$/;          // regular expression to check last name must not contain any numbers.
+        var reg = /^[A-Za-z]+$/;          // regular expression to check last name must not contain any numbers.
 	if (!reg.test(lastname)) {
 		return "Last Name should not contain any numbers (0-9).\n";	
     }
@@ -47,13 +47,13 @@ function validateLastName() {
 }
 
 function validatePassword() {
-    var password = valueOf("password");                                 // store the password.
-    var reg = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/; // regular expression to check password should not contain any special characters.
-    if (!reg.test(password)) {
+    var password = valueOf("password");     // store the password.
+    var reg = /^(?=.*?[#?!@$%^&*-]).{8,}$/; // regular expression to check password should not contain any special characters.
+    if (reg.test(password)) {
         return "Password should not contain any special charaters.\n"
     }
-	if (password.length <= 7) {
+    if (password.length <= 7) {
 		return "Password should be at least 8 characters long.\n";
     }
-	return "";
+    return "";
 }
