@@ -1,7 +1,7 @@
 function validate() {  
     var result = ""; // variable to store validation results. 
 	result += validateFirstName (); 
-    result += validateLastName (); 	
+        result += validateLastName (); 	
 	result += validateEmail ();
 	result += validatePassword ();
 	
@@ -9,7 +9,7 @@ function validate() {
         alert("Form submitted successfully");
         return true;
     }
-    alert("Please entered valid input in all text box.");
+    alert("Please enter valid input in all text box.");
 	return false;	
 }
 
