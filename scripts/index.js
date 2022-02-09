@@ -1,5 +1,5 @@
 function validate() {  
-    var result = ""; // variable to store validation results. 
+    var result = ""; 
 	result += validateFirstName (); 
         result += validateLastName (); 	
 	result += validateEmail ();
@@ -19,8 +19,8 @@ function valueOf(name) {
 }
 
 function validateEmail() {
-    var email = valueOf("email");                                 // store the email value.
-    var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;    // regular expression to check email is valid.
+    var email = valueOf("email");                                 
+    var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;    
 
     if (reg.test(email)) {
         document.getElementById("invalidEmail").innerHTML="";
@@ -34,7 +34,7 @@ function validateFirstName() {
     var firstname = valueOf("fname"); 
     // store the first name.
     console.log(firstname);
-    var reg = /^[A-Za-z]+$/;          // regular expression to check first name must not contain any numbers.
+    var reg = /^[A-Za-z]+$/;          
 	if (!reg.test(firstname)) {
         document.getElementById("invalidFirstName").innerHTML="Error: The first Name should not contain any numbers.";
         return "error";
@@ -45,8 +45,8 @@ function validateFirstName() {
 }
 
 function validateLastName() {
-	var lastname = valueOf("lname");  // store the last name.
-    var reg = /^[A-Za-z]+$/;          // regular expression to check last name must not contain any numbers.
+	var lastname = valueOf("lname");  
+    var reg = /^[A-Za-z]+$/;          
 	if (!reg.test(lastname)) {
         document.getElementById("invalidLastName").innerHTML="Error: The Last Name should not contain any numbers.";
         return "error";	
@@ -56,8 +56,8 @@ function validateLastName() {
 }
 
 function validatePassword() {
-    var password = valueOf("password");     // store the password.
-    var reg = /^(?=.*?[#?!@$%^&*-]).{8,}$/; // regular expression to check password should not contain any special characters.
+    var password = valueOf("password");     
+    var reg = /^(?=.*?[#?!@$%^&*-]).{8,}$/; 
     if (reg.test(password)) {
         document.getElementById("invalidPassword").innerHTML="Error: Password should not contain any special charaters.\n";
         return "error";
