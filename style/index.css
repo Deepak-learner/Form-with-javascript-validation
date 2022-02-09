@@ -7,6 +7,27 @@
     text-align: center;
 }
 
+.icon-play {
+    box-sizing: border-box;
+    position: relative;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px
+}
+
+.icon-play::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid;
+    top: 2px;
+    left: 9px
+}
+
 .inputHeading {
     display: flex;
     padding-bottom: "18px";
