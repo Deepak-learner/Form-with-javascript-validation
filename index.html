@@ -8,31 +8,31 @@
     </head>
     <body>
         <!-- html form tag-->
-        <form method="post" onsubmit="return validate()">
+        <form class="formLayout" method="post" onsubmit="return validate()">
             <div class="formHeading"> Get Started today! </div>
             <div class="inputHeading">
                 <div class="textBox1">First name<br/>
-                    <input type="text" name="fname" onchange="validateFirstName()" />
+                    <input class="inputTextBox" type="text" name="fname" onchange="validateFirstName()" />
                     <small id="invalidFirstName"></small>
                 </div>
                 <div class="textBox2">Last name<br/>
-                    <input type="text" name="lname" onchange="validateLastName()" />
+                    <input class="inputTextBox" type="text" name="lname" onchange="validateLastName()" />
                     <small id="invalidLastName"></small>
                 </div>
             </div> 
             <div class="inputHeading">
                 <div class="textBox1">Email Address<br/>
-                    <input type="text" name="email" onchange="validateEmail()"/>
+                    <input class="inputTextBox" type="text" name="email" onchange="validateEmail()"/>
                     <small id="invalidEmail"></small>
                 </div>
                 <div class="textBox2">Password<br/>
-                    <input type="password" name="password" onchange="validatePassword()"/>
+                    <input class="inputTextBox" type="password" name="password" onchange="validatePassword()"/>
                     <small id="invalidPassword"></small>
                 </div>
             </div>   
       	    <div>
-                <button type="submit" class="button">Claim your free trial <i class="icon-play"></i> </button>
-                <p> You are agreeing to our <a href="#"> Terms and Services </a></p>
+                <button type="submit" class="formSubmitBtn">Claim your free trial <i class="icon-play"></i> </button>
+                <p class="content"> You are agreeing to our <a href="#"> Terms and Services </a></p>
            </div> 
 	    </form>
         <!-- inlude javascript file -->
