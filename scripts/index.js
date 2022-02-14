@@ -1,7 +1,7 @@
 function validate() {  
     var result = ""; 
 	result += validateFirstName (); 
-        result += validateLastName (); 	
+    result += validateLastName (); 	
 	result += validateEmail ();
 	result += validatePassword ();
 	
@@ -32,13 +32,11 @@ function validateEmail() {
 
 function validateFirstName() {
     var firstname = valueOf("fname"); 
-    // store the first name.
     console.log(firstname);
     var reg = /^[A-Za-z]+$/;          
 	if (!reg.test(firstname)) {
         document.getElementById("invalidFirstName").innerHTML="Error: The first Name should not contain any numbers.";
         return "error";
-		//return "First Name should not contain any numbers (0-9).\n";
     }	
     document.getElementById("invalidFirstName").innerHTML="";
     return "";
@@ -68,4 +66,3 @@ function validatePassword() {
     }
     return "";
 }
-
