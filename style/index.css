@@ -66,10 +66,6 @@
   width: 200px;
 }
 
-.firstRowtextBox {
-  margin-top: 40px;
-}
-
 .invalidInput {
   display: flex;
   justify-content: space-evenly;
