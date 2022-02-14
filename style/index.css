@@ -8,11 +8,15 @@
 }
 
 .formHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #637a91;
   border: 2px solid #637a91;
   color: #ffff;
   padding: 15px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .formSubmitBtn {
@@ -20,7 +24,6 @@
   color: #ffff;
   float: center;
   margin-left: 4%;
-  margin-top: 2%;
   margin-bottom: 2%;
   padding: 2%;
   text-align: center;
@@ -50,7 +53,8 @@
 
 .inputHeading {
   display: flex;
-  padding-bottom: "18px";
+  flex-direction: row;
+  justify-content: space-evenly;
   font-family: Verdana, sans-serif;
 }
 
@@ -62,29 +66,17 @@
   width: 200px;
 }
 
-.textBox2 {
-  margin: 4%;
-  margin-left: 25%;
+.firstRowtextBox {
+  margin-top: 40px;
 }
 
-.textBox1 {
-  margin: 4%;
-}
-
-#invalidEmail {
-color:red;
-}
-
-#invalidPassword {
-color:red;
-}
-
-#invalidFirstName {
-color:red;
-}
-
-#invalidLastName {
-color:red;
+.invalidInput {
+  display: flex;
+  justify-content: space-evenly;
+  width: 190px;
+  color: red;
+  height: 65px;
+  margin: 5px;
 }
 
 .content {
@@ -99,17 +91,23 @@ color:red;
   width: 450px;
 }
 
+.formHeading {
+  margin-bottom: 20px;
+}
+
 .inputTextBox {
-  width: 95%;
+  width: 90%;
 }
 
 .inputHeading {
   display: flex;
   flex-direction: column;
+  text-align:center;
 }
 
-.textBox1, .textBox2 {
-  margin: 4%;
-  margin-left: 4%;
+.invalidInput {
+  width: 92%;
+  height: 20px;
 }
+
 }
