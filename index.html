@@ -11,23 +11,23 @@
         <form class="formLayout" method="post" onsubmit="return validate()">
             <div class="formHeading"> Get Started today! </div>
             <div class="inputHeading">
-                <div class="textBox1">First name<br/>
+                <div>First name<br/>
                     <input class="inputTextBox" type="text" name="fname" onchange="validateFirstName()" />
-                    <small id="invalidFirstName"></small>
+                    <small class="invalidInput" id="invalidFirstName"></small>
                 </div>
-                <div class="textBox2">Last name<br/>
+                <div>Last name<br/>
                     <input class="inputTextBox" type="text" name="lname" onchange="validateLastName()" />
-                    <small id="invalidLastName"></small>
+                    <small class="invalidInput" id="invalidLastName"></small>
                 </div>
             </div> 
             <div class="inputHeading">
-                <div class="textBox1">Email Address<br/>
+                <div>Email Address<br/>
                     <input class="inputTextBox" type="text" name="email" onchange="validateEmail()"/>
-                    <small id="invalidEmail"></small>
+                    <small class="invalidInput" id="invalidEmail"></small>
                 </div>
-                <div class="textBox2">Password<br/>
+                <div>Password<br/>
                     <input class="inputTextBox" type="password" name="password" onchange="validatePassword()"/>
-                    <small id="invalidPassword"></small>
+                    <small class="invalidInput" id="invalidPassword"></small>
                 </div>
             </div>   
       	    <div>
