@@ -1,7 +1,7 @@
 function validate() {  
     var result = ""; 
 	result += validateFirstName (); 
-    result += validateLastName (); 	
+        result += validateLastName (); 	
 	result += validateEmail ();
 	result += validatePassword ();
 	
