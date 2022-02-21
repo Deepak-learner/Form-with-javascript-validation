@@ -32,7 +32,6 @@ function validateEmail() {
 
 function validateFirstName() {
     var firstname = valueOf("fname"); 
-    console.log(firstname);
     var reg = /^[A-Za-z]+$/;          
 	if (!reg.test(firstname)) {
         document.getElementById("invalidFirstName").innerHTML="Error: The first Name should not contain any numbers.";
